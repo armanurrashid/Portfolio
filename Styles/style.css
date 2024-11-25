@@ -346,12 +346,13 @@ h3.my-profession {
     font-size: 16px;
     line-height: 25px;
     color: var(--text-black-700);
+    text-align: justify;
 }
 
 .about .about-content .personal-info {
-    flex: 0 0 60%;
-    max-width: 60%;
-    margin-top: 40px;
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-top: 30px;
 }
 
 .about .about-content .personal-info .info-item {
@@ -374,8 +375,16 @@ h3.my-profession {
     display: inline-block;
 }
 
+.about .about-content .personal-info .info-item p span a {
+    color: var(--text-black-700);
+}
+
+.about .about-content .personal-info .info-item p span a:hover {
+    color: blue;
+}
+
 .about .about-content .personal-info .buttons {
-    margin-top: 30px;
+    margin-top: 20px;
 }
 
 .about .about-content .personal-info .buttons .btn {
@@ -384,14 +393,14 @@ h3.my-profession {
 }
 
 .about .about-content .skills {
-    flex: 0 0 40%;
-    max-width: 40%;
+    flex: 0 0 100%;
+    max-width: 100%;
     margin-top: 40px;
 }
 
 .about .about-content .skills .skill-item {
-    flex: 0 0 100%;
-    max-width: 100%;
+    flex: 0 0 50%;
+    max-width: 50%;
     margin-bottom: 25px;
 }
 
@@ -505,13 +514,20 @@ h3.my-profession {
     font-weight: 700;
     font-size: 18px;
     margin-bottom: 15px;
-    text-transform: capitalize;
+    /* text-transform: capitalize; */
     color: var(--text-black-900);
 }
 
 .about .about-content .timeline .timeline-text {
     line-height: 25px;
     font-size: 16px;
+    text-align: justify;
+    color: var(--text-black-700);
+}
+
+.about .about-content .timeline .timeline-info {
+    line-height: 30px;
+    font-size: 14px;
     text-align: justify;
     color: var(--text-black-700);
 }
