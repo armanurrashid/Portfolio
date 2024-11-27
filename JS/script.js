@@ -1,5 +1,14 @@
+const navLinks = document.querySelectorAll('.nav li a');
+
+navLinks.forEach(link => {
+    link.addEventListener('click', function() {
+        navLinks.forEach(nav => nav.classList.remove('active'));
+        this.classList.add('active');
+    });
+});
+
 var typed = new Typed(".typing", {
-    strings: ["", "Web Designer", "Web Developer", "Graphic Designer"],
+    strings: ["Web Designer", "Web Developer"],
     typeSpeed: 100,
     backSpeed: 60,
     loop: true
