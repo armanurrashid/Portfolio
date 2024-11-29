@@ -193,6 +193,12 @@ canvas.particles-js-canvas-el {
 .hire-me {
     position: relative;
     z-index: 2;
+    margin-right: 10px;
+}
+
+.download-button {
+    position: relative;
+    z-index: 2;
 }
 
 .row {
@@ -816,6 +822,9 @@ h3.my-profession {
 }
 
 @media (max-width:1199px) {
+    .section .container {
+        padding-top: 70px;
+    }
     .aside {
         left: -270px;
     }
