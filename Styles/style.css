@@ -353,8 +353,8 @@ h3.hello {
 
 h3.hello span {
     font-family: 'Clicker Script', cursive;
-    font-size: 30px;
-    font-weight: 700;
+    font-size: 45px;
+    font-weight: 900;
     color: var(--skin-color);
 }
 
