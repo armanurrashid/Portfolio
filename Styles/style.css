@@ -97,17 +97,6 @@ ul {
     }
 }
 
-
-/* .hidden {
-    display: none !important;
-} */
-
-
-/* 
-.main-content {
-    padding-left: 270px;
-} */
-
 .padd-15 {
     padding-left: 15px;
     padding-right: 15px;
@@ -184,6 +173,7 @@ canvas.particles-js-canvas-el {
     background: var(--skin-color);
     transition: all 0.3s ease;
     border: none;
+    margin-bottom: 15px;
 }
 
 .btn:hover {
@@ -205,8 +195,6 @@ canvas.particles-js-canvas-el {
 .row {
     display: flex;
     flex-wrap: wrap;
-    /* margin-left: -15px; */
-    /* margin-right: -15px; */
     position: relative;
 }
 
@@ -230,7 +218,6 @@ canvas.particles-js-canvas-el {
     position: absolute;
     top: 50px;
     font-size: 30px;
-    /* text-transform: capitalize; */
 }
 
 .aside .logo a {
@@ -418,7 +405,7 @@ h3.my-profession {
 }
 
 .home .home-img img {
-    height: 400px;
+    height: 350px;
     margin: auto;
     border-radius: 5px;
 }
@@ -620,7 +607,6 @@ h3.my-profession {
     font-weight: 700;
     font-size: 18px;
     margin-bottom: 15px;
-    /* text-transform: capitalize; */
     color: var(--text-black-900);
 }
 
@@ -633,7 +619,7 @@ h3.my-profession {
 
 .timeline .timeline-info {
     line-height: 30px;
-    font-size: 14px;
+    font-size: 13px;
     color: var(--text-black-700);
 }
 
@@ -784,7 +770,7 @@ h3.my-profession {
 }
 
 .contact .contact-info-item p {
-    font-size: 16px;
+    font-size: 14px;
     line-height: 25px;
     color: var(--text-black-700);
     font-weight: 400;
@@ -857,8 +843,14 @@ h3.my-profession {
     .section.open {
         left: 270px;
     }
+    .home .home-info {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .home .home-img {
+        display: none;
+    }
     .about .about-content .personal-info .info-item p span {
-        /* display: block; */
         margin-left: 0;
     }
 }
@@ -919,7 +911,6 @@ h3.my-profession {
 
 .open-popup {
     visibility: visible;
-    /* top: 50%; */
     transform: translate(-50%, -50%) scale(1);
 }
 
