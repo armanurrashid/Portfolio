@@ -15,6 +15,9 @@ let popup = document.getElementById("popup");
 
 function openModal() {
     popup.classList.add("open-popup");
+    setTimeout(() => {
+        popup.classList.remove('open-popup');
+    }, 4000);
 }
 function closePopup() {
     popup.classList.remove("open-popup");
@@ -26,3 +29,14 @@ function clearFormFields() {
     document.getElementById("subject").value = "";
     document.getElementById("message").value = "";
 }
+
+// Function to show the popup
+// function showPopup() {
+//     const popup = document.getElementById('popup');
+//     popup.classList.add('open-popup');
+
+//     setTimeout(() => {
+//         popup.classList.remove('open-popup');
+//     }, 4000);
+// }
+// showPopup();

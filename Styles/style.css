@@ -188,6 +188,7 @@ canvas.particles-js-canvas-el {
 
 .btn:hover {
     transform: scale(1.05);
+    cursor: pointer;
 }
 
 .hire-me {
@@ -561,12 +562,12 @@ h3.my-profession {
     color: var(--text-black-900);
 }
 
-.about .about-content .timeline-box {
+.timeline-box {
     flex: 0 0 100%;
     max-width: 100%;
 }
 
-.about .about-content .timeline {
+.timeline {
     background-color: var(--bg-black-100);
     padding: 30px 15px;
     border: 1px solid var(--bg-black-50);
@@ -574,17 +575,17 @@ h3.my-profession {
     position: relative;
 }
 
-.about .about-content .timeline .timeline-item {
+.timeline .timeline-item {
     position: relative;
     padding-left: 37px;
     padding-bottom: 50px;
 }
 
-.about .about-content .timeline .timeline-item:last-child {
+.timeline .timeline-item:last-child {
     padding-bottom: 0;
 }
 
-.about .about-content .timeline .timeline-item::before {
+.timeline .timeline-item::before {
     content: " ";
     width: 1px;
     position: absolute;
@@ -594,7 +595,7 @@ h3.my-profession {
     background-color: var(--skin-color);
 }
 
-.about .about-content .timeline .circle-dot {
+.timeline .circle-dot {
     position: absolute;
     left: 0;
     top: 0;
@@ -604,18 +605,18 @@ h3.my-profession {
     background-color: var(--skin-color);
 }
 
-.about .about-content .timeline .timeline-date {
+.timeline .timeline-date {
     font-weight: 400;
     font-size: 14px;
     margin-bottom: 13px;
     color: var(--text-black-700);
 }
 
-.about .about-content .timeline .fa {
+.timeline .fa {
     margin-right: 5px;
 }
 
-.about .about-content .timeline .timeline-title {
+.timeline .timeline-title {
     font-weight: 700;
     font-size: 18px;
     margin-bottom: 15px;
@@ -623,14 +624,14 @@ h3.my-profession {
     color: var(--text-black-900);
 }
 
-.about .about-content .timeline .timeline-text {
+.timeline .timeline-text {
     line-height: 25px;
     font-size: 16px;
     text-align: justify;
     color: var(--text-black-700);
 }
 
-.about .about-content .timeline .timeline-info {
+.timeline .timeline-info {
     line-height: 30px;
     font-size: 14px;
     color: var(--text-black-700);
@@ -703,33 +704,45 @@ h3.my-profession {
     padding-bottom: 40px;
 }
 
-.portfolio .portfolio-heading {
+.portfolio .portfolio-heading,
+.certification .certification-heading {
     flex: 0 0 100%;
     max-width: 100%;
     margin-bottom: 40px;
 }
 
-.portfolio .portfolio-heading h2 {
+.portfolio .portfolio-heading h2,
+.certification .certification-heading h2 {
     color: var(--text-black-900);
     font-weight: 500;
 }
 
-.portfolio .portfolio-item {
+.portfolio .portfolio-item,
+.certification .certification-item {
     flex: 0 0 33.33%;
     max-width: 33.33%;
     margin-bottom: 30px;
 }
 
-.portfolio .portfolio-item-inner {
+.portfolio .portfolio-item-inner,
+.certification .certification-item-inner {
     border: 6px solid var(--bg-black-100);
     border-radius: 10px;
     overflow: hidden;
     cursor: pointer;
 }
 
-.portfolio .portfolio-item-inner img {
+.portfolio .portfolio-item-inner img,
+.certification .certification-item-inner img {
     width: 100%;
     display: block;
+    height: 200px;
+}
+
+.certification .course-item {
+    flex: 0 0 50%;
+    max-width: 50%;
+    margin-bottom: 30px;
 }
 
 .contact-title {
@@ -853,6 +866,8 @@ h3.my-profession {
 @media (max-width:991px) {
     .contact .contact-info-item,
     .portfolio .portfolio-item,
+    .certification .certification-item,
+    .certification .course-item,
     .service .service-item {
         flex: 0 0 50%;
         max-width: 50%;
@@ -871,7 +886,8 @@ h3.my-profession {
 @media (max-width:767px) {
     .contact .contact-form .col-6,
     .portfolio .portfolio-item,
-    .service .service-item,
+    .certification .certification-item,
+    .certification .course-item,
     .about .about-content .education,
     .about .about-content .experience,
     .about .about-content .skills,
@@ -889,8 +905,8 @@ h3.my-profession {
     width: 400px;
     background: #fff;
     border-radius: 6px;
-    position: absolute;
-    top: 0;
+    position: fixed;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(0.1);
     text-align: center;
@@ -903,7 +919,7 @@ h3.my-profession {
 
 .open-popup {
     visibility: visible;
-    top: 50%;
+    /* top: 50%; */
     transform: translate(-50%, -50%) scale(1);
 }
 
